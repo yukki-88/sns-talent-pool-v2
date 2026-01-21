@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNS Talent Pool - 学生管理ダッシュボード</title>
+    
+    <!-- Google Fonts - 独特なフォント選択 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">🎯</span>
+                <h1>SNS Talent Pool</h1>
+            </div>
+            <div class="header-stats">
+                <div class="stat-card">
+                    <span class="stat-number" id="totalStudents">0</span>
+                    <span class="stat-label">登録学生</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="matchedStudents">0</span>
+                    <span class="stat-label">マッチング済み</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+        <!-- フィルターエリア -->
+        <section class="filter-section">
+            <h2 class="section-title">🔍 学生を絞り込む</h2>
+            
+            <div class="filter-grid">
+                <!-- 興味分野フィルター -->
+                <div class="filter-group">
+                    <label class="filter-label">興味分野</label>
+                    <select id="interestFilter" class="filter-select">
+                        <option value="">すべて</option>
+                        <option value="マーケティング">マーケティング</option>
+                        <option value="エンジニアリング">エンジニアリング</option>
+                        <option value="デザイン">デザイン</option>
+                        <option value="営業">営業</option>
+                        <option value="企画">企画</option>
+                    </select>
+                </div>
+
+                <!-- スキルフィルター -->
+                <div class="filter-group">
+                    <label class="filter-label">スキル</label>
+                    <select id="skillFilter" class="filter-select">
+                        <option value="">すべて</option>
+                        <option value="SNS運用">SNS運用</option>
+                        <option value="動画編集">動画編集</option>
+                        <option value="プログラミング">プログラミング</option>
+                        <option value="デザイン">デザイン</option>
+                        <option value="ライティング">ライティング</option>
+                    </select>
+                </div>
+
+                <!-- 大学フィルター -->
+                <div class="filter-group">
+                    <label class="filter-label">大学</label>
+                    <select id="universityFilter" class="filter-select">
+                        <option value="">すべて</option>
+                        <option value="東京大学">東京大学</option>
+                        <option value="早稲田大学">早稲田大学</option>
+                        <option value="慶應義塾大学">慶應義塾大学</option>
+                    </select>
+                </div>
+
+                <!-- 検索ボックス -->
+                <div class="filter-group">
+                    <label class="filter-label">キーワード検索</label>
+                    <input type="text" id="searchBox" class="filter-input" placeholder="名前、大学、スキルで検索...">
+                </div>
+            </div>
+
+            <button id="resetFilters" class="reset-button">フィルターをリセット</button>
+        </section>
+
+        <!-- 学生一覧エリア -->
+        <section class="students-section">
+            <div class="section-header">
+                <h2 class="section-title">📋 学生一覧</h2>
+                <div class="view-toggle">
+                    <button class="toggle-btn active" data-view="grid">グリッド</button>
+                    <button class="toggle-btn" data-view="list">リスト</button>
+                </div>
+            </div>
+
+            <!-- 学生カード表示エリア -->
+            <div id="studentsGrid" class="students-grid">
+                <!-- JavaScriptで動的に生成 -->
+            </div>
+
+            <!-- ローディング -->
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>データを読み込み中...</p>
+            </div>
+
+            <!-- データなし -->
+            <div id="noData" class="no-data" style="display: none;">
+                <p>条件に合う学生が見つかりませんでした</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- 学生詳細モーダル -->
+    <div id="studentModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <div id="modalBody">
+                <!-- JavaScriptで動的に生成 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "田中 太郎",
+    "email": "tanaka@example.com",
+    "phone": "090-1234-5678",
+    "university": "早稲田大学",
+    "grade": "3年生",
+    "interests": ["マーケティング", "企画"],
+    "skills": ["SNS運用", "動画編集", "ライティング"],
+    "sns": {
+      "instagram": "https://instagram.com/tanaka_taro",
+      "tiktok": "https://tiktok.com/@tanaka_taro",
+      "twitter": "https://twitter.com/tanaka_taro"
+    },
+    "bio": "マーケティングに強い関心があり、大学のサークルでSNS運用を担当しています。InstagramとTikTokで合計フォロワー5万人を達成しました。動画編集やコンテンツ企画が得意で、エンゲージメント率の高い投稿を作ることができます。"
+  },
+  {
+    "id": 2,
+    "name": "佐藤 花子",
+    "email": "sato@example.com",
+    "phone": "080-2345-6789",
+    "university": "慶應義塾大学",
+    "grade": "2年生",
+    "interests": ["デザイン", "マーケティング"],
+    "skills": ["デザイン", "動画編集", "SNS運用"],
+    "sns": {
+      "instagram": "https://instagram.com/sato_hanako",
+      "tiktok": "https://tiktok.com/@sato_hanako",
+      "twitter": ""
+    },
+    "bio": "デザインとマーケティングの融合に興味があります。学生団体でグラフィックデザインを担当し、Instagram運用も行っています。CanvaやAdobe製品を使ったビジュアルコンテンツ制作が得意です。"
+  },
+  {
+    "id": 3,
+    "name": "鈴木 健太",
+    "email": "suzuki@example.com",
+    "phone": "070-3456-7890",
+    "university": "東京大学",
+    "grade": "3年生",
+    "interests": ["エンジニアリング", "企画"],
+    "skills": ["プログラミング", "データ分析"],
+    "sns": {
+      "instagram": "",
+      "tiktok": "",
+      "twitter": "https://twitter.com/suzuki_kenta"
+    },
+    "bio": "プログラミングとデータ分析を活用したマーケティングに興味があります。PythonとJavaScriptを使ったWeb開発経験があり、データドリブンな意思決定を重視しています。技術とビジネスの架け橋になりたいです。"
+  },
+  {
+    "id": 4,
+    "name": "高橋 美咲",
+    "email": "takahashi@example.com",
+    "phone": "090-4567-8901",
+    "university": "早稲田大学",
+    "grade": "4年生",
+    "interests": ["営業", "マーケティング"],
+    "skills": ["ライティング", "SNS運用", "プレゼンテーション"],
+    "sns": {
+      "instagram": "https://instagram.com/takahashi_misaki",
+      "tiktok": "https://tiktok.com/@takahashi_misaki",
+      "twitter": "https://twitter.com/takahashi_misaki"
+    },
+    "bio": "営業とマーケティングに強い関心があります。学生起業の経験があり、SNSマーケティングで月間売上100万円を達成しました。コミュニケーション能力とプレゼンスキルに自信があります。"
+  },
+  {
+    "id": 5,
+    "name": "伊藤 大輔",
+    "email": "ito@example.com",
+    "phone": "080-5678-9012",
+    "university": "慶應義塾大学",
+    "grade": "3年生",
+    "interests": ["企画", "マーケティング"],
+    "skills": ["企画立案", "データ分析", "SNS運用"],
+    "sns": {
+      "instagram": "https://instagram.com/ito_daisuke",
+      "tiktok": "",
+      "twitter": "https://twitter.com/ito_daisuke"
+    },
+    "bio": "新規事業の企画とマーケティング戦略に興味があります。学生団体で複数のイベントを企画・運営し、参加者500名以上のイベントを成功させました。データに基づいた戦略立案が得意です。"
+  },
+  {
+    "id": 6,
+    "name": "山本 美優",
+    "email": "yamamoto@example.com",
+    "phone": "090-6789-0123",
+    "university": "東京大学",
+    "grade": "2年生",
+    "interests": ["デザイン", "企画"],
+    "skills": ["デザイン", "動画編集", "ライティング"],
+    "sns": {
+      "instagram": "https://instagram.com/yamamoto_miyu",
+      "tiktok": "https://tiktok.com/@yamamoto_miyu",
+      "twitter": ""
+    },
+    "bio": "デザイン思考を活用した課題解決に興味があります。UI/UXデザインを学び、ユーザー中心の設計を心がけています。InstagramとTikTokでクリエイティブなコンテンツを発信しています。"
+  },
+  {
+    "id": 7,
+    "name": "中村 翔太",
+    "email": "nakamura@example.com",
+    "phone": "070-7890-1234",
+    "university": "早稲田大学",
+    "grade": "3年生",
+    "interests": ["エンジニアリング", "マーケティング"],
+    "skills": ["プログラミング", "SNS運用", "データ分析"],
+    "sns": {
+      "instagram": "",
+      "tiktok": "https://tiktok.com/@nakamura_shota",
+      "twitter": "https://twitter.com/nakamura_shota"
+    },
+    "bio": "技術とマーケティングの融合に興味があります。Web開発のスキルを活かしながら、マーケティングオートメーションやグロースハックに取り組んでいます。TikTokで技術解説動画を発信中です。"
+  },
+  {
+    "id": 8,
+    "name": "小林 彩香",
+    "email": "kobayashi@example.com",
+    "phone": "080-8901-2345",
+    "university": "慶應義塾大学",
+    "grade": "4年生",
+    "interests": ["営業", "企画"],
+    "skills": ["プレゼンテーション", "ライティング", "SNS運用"],
+    "sns": {
+      "instagram": "https://instagram.com/kobayashi_ayaka",
+      "tiktok": "https://tiktok.com/@kobayashi_ayaka",
+      "twitter": "https://twitter.com/kobayashi_ayaka"
+    },
+    "bio": "法人営業とBtoBマーケティングに興味があります。インターンシップで営業経験を積み、商談からクロージングまでの一連のプロセスを学びました。顧客との信頼関係構築が得意です。"
+  },
+  {
+    "id": 9,
+    "name": "加藤 健",
+    "email": "kato@example.com",
+    "phone": "090-9012-3456",
+    "university": "東京大学",
+    "grade": "3年生",
+    "interests": ["マーケティング", "データ分析"],
+    "skills": ["データ分析", "SNS運用", "ライティング"],
+    "sns": {
+      "instagram": "https://instagram.com/kato_ken",
+      "tiktok": "",
+      "twitter": "https://twitter.com/kato_ken"
+    },
+    "bio": "データドリブンマーケティングに強い関心があります。Pythonを使ったデータ分析で、SNSのエンゲージメント最適化を研究しています。数字に基づいた戦略立案と実行が得意です。"
+  },
+  {
+    "id": 10,
+    "name": "渡辺 さくら",
+    "email": "watanabe@example.com",
+    "phone": "070-0123-4567",
+    "university": "早稲田大学",
+    "grade": "2年生",
+    "interests": ["デザイン", "マーケティング"],
+    "skills": ["デザイン", "動画編集", "SNS運用"],
+    "sns": {
+      "instagram": "https://instagram.com/watanabe_sakura",
+      "tiktok": "https://tiktok.com/@watanabe_sakura",
+      "twitter": "https://twitter.com/watanabe_sakura"
+    },
+    "bio": "ビジュアルコミュニケーションとブランディングに興味があります。Instagramフォロワー3万人で、インフルエンサーマーケティングの実践経験があります。美しいビジュアルと伝わるメッセージを大切にしています。"
+  }
+]
