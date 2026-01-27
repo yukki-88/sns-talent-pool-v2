@@ -1,4 +1,10 @@
-# 🎯 SNS Talent Pool
+# 🌐 ライブデモ
+
+**公開URL**: https://sns-talent-pool-v2.vercel.app/
+
+実際に動くシステムをご覧いただけます！
+
+---# 🎯 SNS Talent Pool
 
 **学生×企業をつなぐ、次世代SNS採用プラットフォーム**
 

@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SNS Talent Pool - 人材管理ダッシュボード</title>
+    <title>SNS Talent Pool - 学生管理ダッシュボード</title>
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts - 独特なフォント選択 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     
+    <!-- スタイルシート -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,11 +24,11 @@
             <div class="header-stats">
                 <div class="stat-card">
                     <span class="stat-number" id="totalStudents">0</span>
-                    <span class="stat-label">登録人材</span>
+                    <span class="stat-label">登録学生</span>
                 </div>
                 <div class="stat-card">
                     <span class="stat-number" id="matchedStudents">0</span>
-                    <span class="stat-label">高マッチ度</span>
+                    <span class="stat-label">マッチング済み</span>
                 </div>
             </div>
         </div>
@@ -35,11 +36,12 @@
 
     <!-- メインコンテンツ -->
     <main class="main-content">
-        <!-- フィルターエリア -->
+      <!-- フィルターエリア -->
         <section class="filter-section">
             <h2 class="section-title">🔍 人材を絞り込む</h2>
             
             <div class="filter-grid">
+                <!-- 対象フィルター -->
                 <div class="filter-group">
                     <label class="filter-label">対象</label>
                     <select id="typeFilter" class="filter-select">
@@ -49,6 +51,7 @@
                     </select>
                 </div>
 
+                <!-- カテゴリフィルター -->
                 <div class="filter-group">
                     <label class="filter-label">カテゴリ</label>
                     <select id="categoryFilter" class="filter-select">
@@ -63,6 +66,7 @@
                     </select>
                 </div>
 
+                <!-- 興味分野フィルター -->
                 <div class="filter-group">
                     <label class="filter-label">興味分野</label>
                     <select id="interestFilter" class="filter-select">
@@ -70,64 +74,80 @@
                         <option value="マーケティング">マーケティング</option>
                         <option value="営業">営業</option>
                         <option value="エンジニアリング">エンジニアリング</option>
-                        <option value="AI">AI</option>
+                        <option value="デザイン">デザイン</option>
                         <option value="企画">企画</option>
+                        <option value="AI">AI</option>
+                        <option value="不動産営業">不動産営業</option>
+                        <option value="SEO">SEO</option>
                     </select>
                 </div>
-<div class="filter-group">
+
+                <!-- スキルフィルター -->
+                <div class="filter-group">
                     <label class="filter-label">スキル</label>
                     <select id="skillFilter" class="filter-select">
                         <option value="">すべて</option>
                         <option value="SNS運用">SNS運用</option>
                         <option value="動画編集">動画編集</option>
                         <option value="プログラミング">プログラミング</option>
+                        <option value="デザイン">デザイン</option>
+                        <option value="ライティング">ライティング</option>
                         <option value="テレアポ">テレアポ</option>
                         <option value="商談">商談</option>
                         <option value="データ分析">データ分析</option>
                         <option value="広告運用">広告運用</option>
                     </select>
                 </div>
+
+                <!-- 検索ボックス -->
                 <div class="filter-group">
-                    <label class="filter-label">検索</label>
-                    <input type="text" id="searchBox" class="filter-input" placeholder="名前、スキルで検索...">
+                    <label class="filter-label">キーワード検索</label>
+                    <input type="text" id="searchBox" class="filter-input" placeholder="名前、スキル、カテゴリで検索...">
                 </div>
             </div>
 
-            <button id="resetFilters" class="reset-button">リセット</button>
+            <button id="resetFilters" class="reset-button">フィルターをリセット</button>
         </section>
 
-        <!-- 人材一覧エリア -->
+        <!-- 学生一覧エリア -->
         <section class="students-section">
             <div class="section-header">
-                <h2 class="section-title">📋 人材一覧 (<span id="resultCount">0</span>件)</h2>
+                <h2 class="section-title">📋 学生一覧</h2>
                 <div class="view-toggle">
                     <button class="toggle-btn active" data-view="grid">グリッド</button>
                     <button class="toggle-btn" data-view="list">リスト</button>
                 </div>
             </div>
 
-            <div id="studentsGrid" class="students-grid"></div>
+            <!-- 学生カード表示エリア -->
+            <div id="studentsGrid" class="students-grid">
+                <!-- JavaScriptで動的に生成 -->
+            </div>
 
+            <!-- ローディング -->
             <div id="loading" class="loading">
                 <div class="spinner"></div>
                 <p>データを読み込み中...</p>
             </div>
 
+            <!-- データなし -->
             <div id="noData" class="no-data" style="display: none;">
-                <p>条件に合う人材が見つかりませんでした</p>
+                <p>条件に合う学生が見つかりませんでした</p>
             </div>
         </section>
     </main>
 
-    <!-- 詳細モーダル -->
+    <!-- 学生詳細モーダル -->
     <div id="studentModal" class="modal">
-        <div class="modal-overlay"></div>
         <div class="modal-content">
             <button class="modal-close" id="closeModal">&times;</button>
-            <div id="modalBody"></div>
+            <div id="modalBody">
+                <!-- JavaScriptで動的に生成 -->
+            </div>
         </div>
     </div>
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
